@@ -22,9 +22,6 @@ window.onload = function() {
     if($collision_element.hasClass('empty'))
     {
       $collision_element.removeClass('empty')
-    }else
-    {
-      $(instance.element).html($collision_element.html());
     }
     
     $collision_element.html(temp_html).attr('data-collide', false);
