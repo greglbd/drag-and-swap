@@ -1,0 +1,73 @@
+.is-dragging {
+  
+  background: yellow !important;
+  opacity: 1 !important;
+  z-index: 100;
+  position: relative;
+}
+
+.container {
+  border: 1px solid;
+  position: relative;
+}
+
+.container:after {
+  content: '';
+  display: block;
+  clear: both;
+}
+
+.container {
+  float: left;
+  width: 870px;
+}
+
+.box {
+  float: left;
+  margin: 5px;
+  width: 90px;
+  padding: 5px;
+  height: 200px;
+  background: orange;
+  position: relative;
+  border-radius: 10px;
+}
+
+.box.empty {
+  opacity: 0.5;
+  border: 2px dashed #666;
+  width: 86px;
+  height: 196px;
+}
+
+.box:hover {
+  cursor: move;
+}
+
+[data-collide="true"] {
+  opacity: 0.75;
+  background-color: lightgray;
+}
+.sub_container {
+  padding: 50px;
+  float: left;
+}
+.sub_container_1 {
+  background-color: pink;
+}
+.sub_container_2 {
+  background-color: aqua;
+}
+
+.sub_container_1 .box {
+  background-color: white;
+}
+
+.hide {
+  display: none;
+}
+
+.draggable {
+  position: absolute;
+  bottom: 0px;
+}
